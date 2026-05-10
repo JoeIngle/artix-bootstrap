@@ -1,0 +1,6 @@
+git
+curl
+wget
+rsync
+openssh
+base-devel

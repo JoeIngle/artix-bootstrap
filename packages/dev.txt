@@ -1,0 +1,10 @@
+python
+uv
+nodejs
+npm
+jdk-openjdk
+neovim
+github-cli
+docker
+docker-compose
+code

@@ -1,0 +1,8 @@
+acpi
+brightnessctl
+fwupd
+nvme-cli
+powertop
+smartmontools
+thermald
+tlp

@@ -1,0 +1,13 @@
+firefox
+ghostty
+networkmanager
+network-manager-applet
+pipewire
+pipewire-pulse
+wireplumber
+bluez
+bluez-utils
+blueman
+sddm
+vlc
+gwenview
