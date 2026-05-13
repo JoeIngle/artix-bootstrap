@@ -30,7 +30,17 @@ install_aur_packages() {
         return 0
     fi
 
-    run_cmd yay -S --noconfirm --needed "${packages[@]}"
+    # Always run yay as the invoking user, not root
+    if [[ $EUID -eq 0 ]]; then
+        if [[ -n "$SUDO_USER" ]]; then
+            sudo -u "$SUDO_USER" yay -S --noconfirm --needed "${packages[@]}"
+        else
+            log_error "Cannot determine non-root user for yay. Aborting."
+            return 1
+        fi
+    else
+        yay -S --noconfirm --needed "${packages[@]}"
+    fi
 }
 
 install_yay() {
