@@ -36,15 +36,18 @@ install_aur_packages() {
 install_yay() {
     log_info "Installing yay"
 
-    run_cmd pacman -S --noconfirm --needed git base-devel
+    pacman -S --noconfirm --needed git base-devel
 
     local tmp_dir
     tmp_dir=$(mktemp -d)
 
     git clone https://aur.archlinux.org/yay.git "$tmp_dir/yay"
 
+    chown -R "$SUDO_USER:$SUDO_USER" "$tmp_dir"
+
     cd "$tmp_dir/yay"
-    makepkg -si --noconfirm
+
+    sudo -u "$SUDO_USER" makepkg -si --noconfirm
 
     cd - >/dev/null
 

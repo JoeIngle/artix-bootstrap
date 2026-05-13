@@ -1,4 +1,9 @@
 #!/usr/bin/env bash
+
+set -euo pipefail
+
+ROOT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+
 source "$ROOT_DIR/lib/logging.sh"
 source "$ROOT_DIR/lib/packages.sh"
 source "$ROOT_DIR/lib/services.sh"
