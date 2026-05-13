@@ -1,12 +1,12 @@
-# artix-bootstrap
+# arch-bootstrap
 
-A modular provisioning framework for rebuilding an Artix Linux workstation after a base installation.
+A modular provisioning framework for rebuilding an Arch Linux workstation after a base installation.
 
 The goal of this project is to provide a repeatable, maintainable and reusable workstation bootstrap process without attempting to fully automate operating system installation.
 
 This framework is designed around a clean separation of responsibilities:
 
-* The operating system installation is performed manually using the Artix ISO and Calamares installer
+* The operating system installation is performed manually using the Arch Linux ISO and Calamares installer
 * Workstation provisioning is performed automatically using modular shell scripts
 * Personal configuration is managed separately through a dedicated dotfiles repository
 
@@ -41,7 +41,7 @@ There are deliberately no external provisioning frameworks, templating engines o
 
 ## Manual Installation Phase
 
-The following tasks are intentionally performed manually using the Artix installer:
+The following tasks are intentionally performed manually using the Arch Linux installer:
 
 * Disk partitioning
 * LUKS encryption
@@ -55,8 +55,7 @@ The following tasks are intentionally performed manually using the Artix install
 Recommended installation target:
 
 ```text
-Artix Linux
-OpenRC
+Arch Linux
 Minimal XFCE desktop
 ```
 
@@ -73,7 +72,6 @@ Once the base operating system is installed, this framework provisions:
 * Docker
 * Fonts and themes
 * Shell environment
-* OpenRC services
 * Snapper and grub-btrfs
 * Laptop power management
 * Dotfiles
@@ -211,7 +209,6 @@ Dotfiles repository:
 
 # Features
 
-* OpenRC service management
 * Pacman and AUR package provisioning
 * Docker tooling
 * XFCE workstation setup
@@ -230,8 +227,7 @@ Dotfiles repository:
 The framework is currently optimised for:
 
 ```text
-Artix Linux
-OpenRC
+Arch Linux
 XFCE
 X11
 btrfs
@@ -255,7 +251,7 @@ Primary tooling includes:
 # Repository Structure
 
 ```text
-artix-bootstrap/
+arix-bootstrap/
 ├── install.sh
 ├── README.md
 ├── .editorconfig

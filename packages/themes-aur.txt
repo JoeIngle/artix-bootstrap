@@ -1,0 +1,4 @@
+# AUR theme packages
+# Only AUR packages for themes
+qogir-gtk-theme
+tela-circle-icon-theme

@@ -1,0 +1,4 @@
+# AUR desktop packages
+# Only AUR packages for desktop environment or GUI apps
+ghostty
+onlyoffice-bin

@@ -6,7 +6,6 @@ source "$ROOT_DIR/lib/prompts.sh"
 
 PROFILE=""
 DRY_RUN=false
-SKIP_DOTFILES=false
 
 usage() {
     cat <<EOF
@@ -16,7 +15,6 @@ Usage:
 Options:
   --profile         Profile to execute
   --dry-run         Print actions only
-  --skip-dotfiles   Do not clone/apply dotfiles
   -h, --help        Show this help
 EOF
 }
@@ -29,10 +27,6 @@ while [[ $# -gt 0 ]]; do
             ;;
         --dry-run)
             DRY_RUN=true
-            shift
-            ;;
-        --skip-dotfiles)
-            SKIP_DOTFILES=true
             shift
             ;;
         -h|--help)
@@ -59,7 +53,6 @@ check_internet
 
 export ROOT_DIR
 export DRY_RUN
-export SKIP_DOTFILES
 
 PROFILE_SCRIPT="$ROOT_DIR/profiles/${PROFILE}.sh"
 

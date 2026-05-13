@@ -12,7 +12,3 @@ source "$ROOT_DIR/modules/laptop.sh"
 source "$ROOT_DIR/modules/security.sh"
 source "$ROOT_DIR/modules/snapper.sh"
 source "$ROOT_DIR/modules/xfce.sh"
-
-if [[ "$SKIP_DOTFILES" == false ]]; then
-    source "$ROOT_DIR/modules/dotfiles.sh"
-fi

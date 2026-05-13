@@ -1,3 +1,0 @@
-onlyoffice-bin
-qogir-gtk-theme
-tela-circle-icon-theme

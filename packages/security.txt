@@ -1,3 +1,5 @@
+# Security and crypto tools (official repos)
+# Sorted alphabetically for maintainability
+gnupg
 keepassxc
 ufw
-gnupg

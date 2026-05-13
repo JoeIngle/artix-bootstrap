@@ -1,6 +1,8 @@
-git
-curl
-wget
-rsync
-openssh
+# Core system packages (official repos)
+# Sorted alphabetically for maintainability
 base-devel
+curl
+git
+openssh
+rsync
+wget

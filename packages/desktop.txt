@@ -1,13 +1,14 @@
-firefox
-ghostty
-networkmanager
-network-manager-applet
-pipewire
-pipewire-pulse
-wireplumber
+# Desktop environment and GUI apps (official repos)
+# Sorted alphabetically for maintainability
 bluez
 bluez-utils
 blueman
+firefox
+gwenview
+network-manager-applet
+networkmanager
+pipewire
+pipewire-pulse
 sddm
 vlc
-gwenview
+wireplumber

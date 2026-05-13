@@ -1,0 +1,4 @@
+# Snapper and btrfs snapshot tooling
+# Only packages required for snapper functionality
+snapper
+grub-btrfs

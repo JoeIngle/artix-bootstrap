@@ -1,4 +1,7 @@
+# CLI utilities (official repos only)
+# Sorted alphabetically for maintainability
 bat
+btop
 eza
 fastfetch
 fd
@@ -10,4 +13,3 @@ tmux
 tree
 yazi
 zoxide
-btop

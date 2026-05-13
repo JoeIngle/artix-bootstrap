@@ -1,3 +1,5 @@
+# Fonts (official repos)
+# Sorted alphabetically for maintainability
 cantarell-fonts
 noto-fonts
 noto-fonts-emoji

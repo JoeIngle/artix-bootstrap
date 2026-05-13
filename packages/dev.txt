@@ -1,10 +1,12 @@
-python
-uv
-nodejs
-npm
-jdk-openjdk
-neovim
-github-cli
+# Developer tools and runtimes (official repos)
+# Sorted alphabetically for maintainability
+code
 docker
 docker-compose
-code
+gh              # GitHub CLI (official repo name)
+jdk-openjdk
+neovim
+nodejs
+npm
+python
+uv
